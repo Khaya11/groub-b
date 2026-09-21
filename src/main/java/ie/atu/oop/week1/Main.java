@@ -12,6 +12,9 @@ public class Main {
          firstBook.pageCount = 412;
 
          firstBook.displayDetails();
+         firstBook.borrowBook();
+        System.out.println("\n");
+        firstBook.displayDetails();
         System.out.println("\n");
 
         Book secondBook = new Book();
