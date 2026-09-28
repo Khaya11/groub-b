@@ -56,8 +56,14 @@ public enum BookStatus
     if(status == BookStatus.ON_LOAN){
         throw new IllegalStateException("Book is already on LOAN");
     }
+
     status = BookStatus.ON_LOAN;
     }
-
+    public void returnBook(){
+    if(status == BookStatus.AVAILABLE){
+        throw new IllegalStateException("Book is already AVAILABLE");
+    }
+    status = BookStatus.AVAILABLE;
+    }
 }
 
