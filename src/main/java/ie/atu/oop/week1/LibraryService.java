@@ -16,7 +16,7 @@ public class LibraryService {
     }
     public void returnBook(Book book){
         if (book == null) {
-            throw new IllegalArgumentException("Book cannot not be null");
+            throw new IllegalArgumentException("Book must not be null");
         }
         book.returnBook();
     }
