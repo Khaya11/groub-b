@@ -12,3 +12,8 @@ just to keep the code more tidy
 because if uses a if else statement
 no
 Lab 3 JKD version 2026 2.3. the package = ie.atu.oop.week1 we check on null because calling the isblank() function can cause errors Why are the title author and pagecount final? its because they are permanent we need them. status changes when borrowing or returning book uses borrow and returnbook because they prevent invalid changes
+
+Lab 3 JKD version 2026 2.3. the package = ie.atu.oop.week1
+we check on null because calling the isblank() function can cause errors
+Why are the title author and pagecount final? its because they are permanent we need them. status changes when borrowing or returning
+book uses borrow and returnbook because they prevent invalid changes
