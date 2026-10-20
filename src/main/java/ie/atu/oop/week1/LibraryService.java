@@ -6,6 +6,18 @@ public class LibraryService {
     private static final int MAX_LOAN_DAYS = 14;
     private final List<Book> books = new ArrayList<>();
 
+    public boolean removeBook(String title) {
+        Book book = findBookByTitle(title);
+
+        if (book == null){
+            return false;
+        }
+        books.remove(book);
+        return true;
+    }
+
+
+
     public void addBook(Book book){
         if(book == null){
             throw new IllegalArgumentException("Book cannot be null");

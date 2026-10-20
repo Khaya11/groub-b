@@ -14,22 +14,18 @@ public class Main {
         service.addBook(nineteenEightyFour);
         service.addBook(cleanCode);
 
-        System.out.println("Book List: " + service.getBookCount());
 
-        for (Book book : service.getAllBooks()) {
-            System.out.println(book.getTitle());
-        }
+
 
         Book found = service.findBookByTitle("Dune");
 
-        if (found != null) {
-            System.out.println("Found: " + found.getTitle());
 
-            Book missing = service.findBookByTitle("The Hobbit");
+        System.out.println("Remove Clean Code: " + service.removeBook("Clean Code"));
 
-            if (missing == null) {
-                System.out.println("The Hobbit was not found");
-            }
+        System.out.println("Remove again: " + service.removeBook("Clean Code"));
+
+        System.out.println("Books left: " + service.getBookCount());
+
+        System.out.println("Books left after second removal:" + service.getBookCount());
     }
-}
 }
